@@ -65,6 +65,15 @@ body {
   align-items: center;
 }
 
+.icons {
+  font-size: 1rem;
+}
+
+.icons a {
+  text-decoration: none;
+  color: var(--nav-bar-icon-hover-color);
+}
+
 #links>ul {
   line-height: 50px;
 }
@@ -249,6 +258,10 @@ body {
 #logo-model>img {
   width: 200%;
   z-index: 20;
+}
+
+.shape {
+  pointer-events: none;
 }
 
 #shape1 {
