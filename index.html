@@ -25,27 +25,42 @@
 
     <nav id="links">
       <ul>
-        <li id="home-icon" class="icons"><a href="#home"><i class="fa-solid fa-house fa-lg" style="color: var(--nav-bar-icon-color)"></i></a></li>
-        <li id="about-icon" class="icons"><a href="#about-me"><i class="fa-solid fa-user fa-lg" style="color: var(--nav-bar-icon-color)"></i></a></li>
-        <li id="skills-icon" class="icons"><a href="#skills"><i class="fa-solid fa-gear fa-lg" style="color: var(--nav-bar-icon-color)"></i></a></li>
-        <li id="projects-icon" class="icons"><a href="#projects"><i class="fa-solid fa-file fa-lg" style="color: var(--nav-bar-icon-color)"></i></a></li>
-        <li id="contact-icon" class="icons"><a href="#contact"><i class="fa-solid fa-envelope fa-lg" style="color: var(--nav-bar-icon-color)"></i></a></li>
+        <li id="home-icon" class="icons"><a href="#home"><i class="fa-solid fa-house fa-lg"
+              style="color: var(--nav-bar-icon-color)"></i></a></li>
+        <li id="about-icon" class="icons"><a href="#about-me"><i class="fa-solid fa-user fa-lg"
+              style="color: var(--nav-bar-icon-color)"></i></a></li>
+        <li id="skills-icon" class="icons"><a href="#skills"><i class="fa-solid fa-gear fa-lg"
+              style="color: var(--nav-bar-icon-color)"></i></a></li>
+        <li id="projects-icon" class="icons"><a href="#projects"><i class="fa-solid fa-file fa-lg"
+              style="color: var(--nav-bar-icon-color)"></i></a></li>
+        <li id="contact-icon" class="icons"><a href="#contact"><i class="fa-solid fa-envelope fa-lg"
+              style="color: var(--nav-bar-icon-color)"></i></a></li>
       </ul>
     </nav>
 
     <nav id="social-links">
       <ul>
-        <li><a href="http://"><i class="fa-brands fa-instagram fa-sm" style="color: var(--nav-bar-icon-color)"
-              onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a></li>
-        <li><a href="http://"><i class="fa-brands fa-github fa-sm" style="color: var(--nav-bar-icon-color)"
-              onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a></li>
-        <li><a href="http://"><i class="fa-brands fa-youtube fa-sm" style="color: var(--nav-bar-icon-color)"
-              onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a></li>
+        <li><a href="https://www.instagram.com/aqdas2274/" target="_blank"><i class="fa-brands fa-instagram fa-sm"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li><a href="https://github.com/MohdAqdasAsim" target="_blank"><i class="fa-brands fa-github fa-sm"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li><a href="http://" target="_blank"><i class="fa-brands fa-linkedin fa-sm"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
       </ul>
     </nav>
   </div>
 
+  <div id="setting-btn" data-visible-value="0">
+    <i class="fa-solid fa-gears fa-2xl" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+      onmouseleave="changeColor(this,false)"></i>
+  </div>
+  <div id="setting-menu"></div>
+  
   <div id="web-display">
+
     <div>
       <div class="shape" id="shape1"></div>
       <div class="shape" id="shape2"></div>
@@ -99,12 +114,6 @@
           <img src="images/logo.gif" alt="logo">
         </div>
       </div>
-
-      <div id="mode-btn">
-        <div id="button-back">
-          <div id="circle-toggle" data-on-value="0">On</div>
-        </div>
-      </div>
     </div>
 
     <div class="container" id="about-me">
@@ -122,15 +131,22 @@
             <h1 class="letter-about-me">.</h1>
           </span>
         </div>
-  
+
         <div class="paragraph" id="about-paragraph">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore obcaecati ab porro provident explicabo, dolorem necessitatibus quas voluptate blanditiis voluptatibus, eligendi hic? Sunt dolores quae voluptatum quod architecto eum beatae!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore obcaecati ab porro provident explicabo,
+            dolorem necessitatibus quas voluptate blanditiis voluptatibus, eligendi hic? Sunt dolores quae voluptatum
+            quod architecto eum beatae!
             <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit natus blanditiis dolore libero, itaque explicabo quasi adipisci culpa quam illo eligendi saepe maxime, hic, similique aut. Culpa, qui voluptates.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate, rerum non fugiat iste eligendi perferendis quia exercitationem hic reprehenderit sit maxime asperiores adipisci assumenda sint ad placeat blanditiis labore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit natus blanditiis dolore libero,
+            itaque explicabo quasi adipisci culpa quam illo eligendi saepe maxime, hic, similique aut. Culpa, qui
+            voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate, rerum non fugiat iste eligendi
+            perferendis quia exercitationem hic reprehenderit sit maxime asperiores adipisci assumenda sint ad placeat
+            blanditiis labore!
             <br><br>
-            Interested in the entire frontend and backend spectrum and working on ambitious projects with positive people.
+            Interested in the entire frontend and backend spectrum and working on ambitious projects with positive
+            people.
           </p>
         </div>
       </div>
@@ -149,10 +165,11 @@
             <h1 class="letter-about-me">.</h1>
           </span>
         </div>
-  
+
         <div class="paragraph" id="skills-paragraph">
           <p>
-            I love learning new things and especially if they are related to programming and in my pursuit to learn software devlopment I have mastered the following :
+            I love learning new things and especially if they are related to programming and in my pursuit to learn
+            software devlopment I have mastered the following :
           </p><br><br>
           <div id="skills-box">
             <div>Html</div>
@@ -175,10 +192,10 @@
 
       </div>
       <div class="project" id="project-1">
-        
+
       </div>
       <div class="project" id="project-1">
-        
+
       </div>
     </div>
 
@@ -202,8 +219,11 @@
 
         <div class="paragraph" id="contact-paragraph">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit natus blanditiis dolore libero, itaque explicabo quasi adipisci culpa quam illo eligendi saepe maxime, hic, similique aut. Culpa, qui voluptates.
-            Veniam voluptate, rerum non fugiat iste eligendi perferendis quia exercitationem hic reprehenderit sit maxime asperiores adipisci assumenda sint ad placeat blanditiis labore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit natus blanditiis dolore libero,
+            itaque explicabo quasi adipisci culpa quam illo eligendi saepe maxime, hic, similique aut. Culpa, qui
+            voluptates.
+            Veniam voluptate, rerum non fugiat iste eligendi perferendis quia exercitationem hic reprehenderit sit
+            maxime asperiores adipisci assumenda sint ad placeat blanditiis labore!
           </p>
         </div>
 
@@ -221,7 +241,7 @@
           </div>
         </div>
       </div>
-      <div id="empty-part"></div> 
+      <div id="empty-part"></div>
     </div>
   </div>
 </body>

@@ -449,30 +449,25 @@ body {
   }
 }
 
-#mode-btn {
+#setting-btn {
   position: fixed;
   top: 0;
   right: 0;
-  transform: translateY(25px) translateX(-25px);
+  transform: translateY(25px) translateX(-40px);
+  z-index: 25;
+}
+
+#setting-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--background-color-web);
+  width: 32%;
+  height: 55%;
+  border-radius: 0% 0% 0% 100%;
+  transform: translateY(-500px) translateX(500px);
   z-index: 20;
-}
-
-#button-back {
-  width: 60px;
-  height: 30px;
-  border-radius: 20px;
-  background-color: #000000;
-}
-
-#circle-toggle {
-  width: 50%;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #fff;
-  transition: all 0.2s ease-in;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: all 1s;
 }
 
 /* =============================================Home-Section(End)=========================================================== */
