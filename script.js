@@ -104,6 +104,8 @@ theme_btn.addEventListener("click",() => {
   }
 });
 
+// const background_music = new Audio();
+
 const music_btn = document.getElementById("music");
 const music_circle = document.getElementById("music-circle");
 
