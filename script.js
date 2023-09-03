@@ -81,10 +81,40 @@ const setting_menu = document.getElementById("setting-menu");
 
 setting_btn.addEventListener("click", () => {
   if (setting_btn.dataset.visibleValue == 0) {
-    setting_menu.style.transform = "translate(-0px,0px)";
-    setting_btn.dataset.visibleValue = 0;
-  } else {
-    setting_menu.style.transform = "translate(-500px,500px)";
+    setting_menu.style.transform = "translate(0px,0px)";
     setting_btn.dataset.visibleValue = 1;
+  } else {
+    setting_menu.style.transform = "translate(500px,-500px)";
+    setting_btn.dataset.visibleValue = 0;
+  }
+});
+
+const theme_btn = document.getElementById("theme");
+const theme_circle = document.getElementById("theme-circle");
+
+theme_btn.addEventListener("click",() => {
+  if (theme_btn.dataset.currentMode == 0) {
+    theme_circle.innerHTML = '<i class="fa-solid fa-sun fa-xl" style="color: var(--background-color-web)"></i>';
+    theme_circle.style.transform = "translate(100%,0%)";
+    theme_btn.dataset.currentMode = 1;
+  } else {
+    theme_circle.innerHTML = '<i class="fa-solid fa-moon fa-xl" style="color: var(--background-color-web)"></i>';
+    theme_circle.style.transform = "translate(0%,0%)";
+    theme_btn.dataset.currentMode = 0;
+  }
+});
+
+const music_btn = document.getElementById("music");
+const music_circle = document.getElementById("music-circle");
+
+music_btn.addEventListener("click",() => {
+  if (music_btn.dataset.currentVolume == 0) {
+    music_circle.innerHTML = '<i class="fa-solid fa-volume-xmark fa-xl" style="color: var(--background-color-web)"></i>';
+    music_circle.style.transform = "translate(100%,0%)";
+    music_btn.dataset.currentVolume = 1;
+  } else {
+    music_circle.innerHTML = '<i class="fa-solid fa-volume-high fa-xl" style="color: var(--background-color-web)"></i>';
+    music_circle.style.transform = "translate(0%,0%)";
+    music_btn.dataset.currentVolume = 0;
   }
 });

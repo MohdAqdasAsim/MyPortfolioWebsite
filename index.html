@@ -54,10 +54,20 @@
   </div>
 
   <div id="setting-btn" data-visible-value="0">
-    <i class="fa-solid fa-gears fa-2xl" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
-      onmouseleave="changeColor(this,false)"></i>
+    <i class="fa-solid fa-gears fa-2xl" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"onmouseleave="changeColor(this,false)"></i>
   </div>
-  <div id="setting-menu"></div>
+  <div id="setting-menu">
+    <div id="theme" class="toggle-btn" data-current-mode="0">
+      <div id="theme-circle" class="toggle-circle">
+        <i class="fa-solid fa-moon fa-xl" style="color: var(--background-color-web)"></i>
+      </div>
+    </div>
+    <div id="music" class="toggle-btn" data-current-volume="0">
+      <div id="music-circle" class="toggle-circle">
+        <i class="fa-solid fa-volume-high fa-xl" style="color: var(--background-color-web)"></i>
+      </div>
+    </div>
+  </div>
   
   <div id="web-display">
 
