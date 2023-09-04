@@ -97,26 +97,30 @@ theme_btn.addEventListener("click",() => {
     theme_circle.innerHTML = '<i class="fa-solid fa-sun fa-xl" style="color: var(--background-color-web)"></i>';
     theme_circle.style.transform = "translate(100%,0%)";
     theme_btn.dataset.currentMode = 1;
+    document.querySelector("html").style.filter = "invert(1) hue-rotate(180deg)";
   } else {
     theme_circle.innerHTML = '<i class="fa-solid fa-moon fa-xl" style="color: var(--background-color-web)"></i>';
     theme_circle.style.transform = "translate(0%,0%)";
     theme_btn.dataset.currentMode = 0;
+    document.querySelector("html").style.filter = "invert(0) hue-rotate(0deg)";
   }
 });
 
-// const background_music = new Audio();
+const background_music = new Audio("./music/m2.mp3");
 
 const music_btn = document.getElementById("music");
 const music_circle = document.getElementById("music-circle");
 
 music_btn.addEventListener("click",() => {
   if (music_btn.dataset.currentVolume == 0) {
-    music_circle.innerHTML = '<i class="fa-solid fa-volume-xmark fa-xl" style="color: var(--background-color-web)"></i>';
+    music_circle.innerHTML = '<i class="fa-solid fa-volume-high fa-xl" style="color: var(--background-color-web)"></i>';
     music_circle.style.transform = "translate(100%,0%)";
     music_btn.dataset.currentVolume = 1;
+    background_music.play();
   } else {
-    music_circle.innerHTML = '<i class="fa-solid fa-volume-high fa-xl" style="color: var(--background-color-web)"></i>';
+    music_circle.innerHTML = '<i class="fa-solid fa-volume-xmark fa-xl" style="color: var(--background-color-web)"></i>';
     music_circle.style.transform = "translate(0%,0%)";
     music_btn.dataset.currentVolume = 0;
+    background_music.pause();
   }
 });
