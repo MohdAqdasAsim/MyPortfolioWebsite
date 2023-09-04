@@ -92,7 +92,7 @@ setting_btn.addEventListener("click", () => {
 const theme_btn = document.getElementById("theme");
 const theme_circle = document.getElementById("theme-circle");
 
-theme_btn.addEventListener("click",() => {
+theme_btn.addEventListener("click", () => {
   if (theme_btn.dataset.currentMode == 0) {
     theme_circle.innerHTML = '<i class="fa-solid fa-sun fa-xl" style="color: var(--background-color-web)"></i>';
     theme_circle.style.transform = "translate(100%,0%)";
@@ -121,7 +121,7 @@ const background_music = new Audio("./music/m2.mp3");
 const music_btn = document.getElementById("music");
 const music_circle = document.getElementById("music-circle");
 
-music_btn.addEventListener("click",() => {
+music_btn.addEventListener("click", () => {
   if (music_btn.dataset.currentVolume == 0) {
     music_circle.innerHTML = '<i class="fa-solid fa-volume-high fa-xl" style="color: var(--background-color-web)"></i>';
     music_circle.style.transform = "translate(100%,0%)";
