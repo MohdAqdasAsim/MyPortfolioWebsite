@@ -98,11 +98,21 @@ theme_btn.addEventListener("click",() => {
     theme_circle.style.transform = "translate(100%,0%)";
     theme_btn.dataset.currentMode = 1;
     document.querySelector("html").style.filter = "invert(1) hue-rotate(180deg)";
+    const images = document.querySelectorAll("img");
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.filter = "invert(1) hue-rotate(180deg)";
+    }
   } else {
     theme_circle.innerHTML = '<i class="fa-solid fa-moon fa-xl" style="color: var(--background-color-web)"></i>';
     theme_circle.style.transform = "translate(0%,0%)";
     theme_btn.dataset.currentMode = 0;
     document.querySelector("html").style.filter = "invert(0) hue-rotate(0deg)";
+    const images = document.querySelectorAll("img");
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.filter = "invert(0) hue-rotate(0deg)";
+    }
   }
 });
 
