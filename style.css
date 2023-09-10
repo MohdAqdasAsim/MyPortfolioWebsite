@@ -15,20 +15,31 @@ body {
 }
 
 :root {
-  --background-color-web: #222831;
-  --background-color-nav-bar: #393E46;
+  --dominant-color: #005880;
+  --complementary-color: #6470A3;
+  --accent-color: #99A4DA;
+
+  --background-color-web: #008696;
+  --background-color-nav-bar: #052D54;
+
+  --menu-div-color: #191c20;
+
   --nav-bar-icon-color: #8b929e;
   --nav-bar-icon-hover-color: #EEEEEE;
-  --button-color: #00ff1e;
-  --primary: #f2faf8;
+
+  --primary: #99A4DA;
   --secondary: #e4e5ec;
+
+  --font-color: #e0e0a5;
+  --font-hover-color: #84DA7C;
+  --font-paragraph-color: #f5f5f5;
 }
 
 #nav-bar {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--background-color-web);
+  background-color: var(--background-color-nav-bar);
   height: 100%;
   width: 60px;
   display: flex;
@@ -41,18 +52,17 @@ body {
   z-index: 100;
 }
 
-#logo {
-  width: 80%;
-  border-radius: 50%;
-}
-
-#logo-div {
+#menu-div {
   width: 100%;
-  height: 12%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #191c20;
+  background-color: var(--menu-div-color);
+}
+
+#menu {
+  z-index: 30;
 }
 
 #nav-bar ul {
@@ -85,7 +95,7 @@ body {
 #web-display {
   width: 100%;
   height: 100vh;
-  background-color: var(--background-color-nav-bar);
+  background-color: var(--background-color-web);
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
@@ -171,11 +181,11 @@ body {
 .letter {
   margin: 0;
   padding: 0;
-  color: white;
+  color: var(--font-color);
 }
 
 .letter.animated {
-  color: #222831;
+  color: var(--font-hover-color);
   animation: font-animation 0.7s ease-in-out;
 }
 
@@ -239,20 +249,20 @@ body {
 
 #contact-btn:hover>a {
   text-decoration: none;
-  color: var(--background-color-web);
+  color: var(--background-color-nav-bar);
 }
 
 #contact-btn {
   font-size: 1.5rem;
   margin-top: 30px;
   padding: 10px 30px;
-  background-color: var(--background-color-web);
+  background-color: var(--background-color-nav-bar);
   border: 3px solid transparent;
 }
 
 #contact-btn:hover {
-  background-color: var(--background-color-nav-bar);
-  border: 3px solid var(--background-color-web)
+  background-color: var(--background-color-web);
+  border: 3px solid var(--background-color-nav-bar);
 }
 
 #logo-model img {
@@ -462,7 +472,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: var(--background-color-web);
+  background-color: var(--background-color-nav-bar);
   width: 32%;
   height: 55%;
   border-radius: 0% 0% 0% 100%;
@@ -482,7 +492,7 @@ body {
   height: 50px;
   margin-right: 30%;
   border-radius: 50px;
-  background-color: var(--background-color-nav-bar);
+  background-color: var(--background-color-web);
 }
 
 .toggle-circle {
@@ -506,11 +516,11 @@ body {
 .letter-about-me {
   margin: 0;
   padding: 0;
-  color: var(--nav-bar-icon-color);
+  color: var(--font-color);
 }
 
 .letter-about-me.animated {
-  color: #222831;
+  color: var(--font-hover-color);
   animation: font-animation 0.7s ease-in-out;
 }
 
@@ -521,7 +531,7 @@ body {
 }
 
 .paragraph {
-  color: whitesmoke;
+  color: var(--font-paragraph-color);
   font-size: 1.2rem;
   line-height: 25px;
 }
@@ -539,7 +549,7 @@ body {
 /* ====================================================About-Section(End)==================================================== */
 
 #skills-paragraph {
-  color: whitesmoke;
+  color: var(--font-paragraph-color);
   font-size: 1.2rem;
   width: 75%;
   line-height: 25px;
@@ -561,7 +571,7 @@ body {
 }
 
 #skills-box>div {
-  background-color: var(--background-color-web);
+  background-color: var(--background-color-nav-bar);
   padding: 30px 40px;
   display: flex;
   gap: 30px;
@@ -571,7 +581,7 @@ body {
 }
 
 #skills-box>div>div {
-  background-color: var(--background-color-web);
+  background-color: var(--background-color-nav-bar);
   display: flex;
   justify-content: center;
 }
@@ -658,7 +668,7 @@ body {
 }
 
 #projects-paragraph {
-  color: whitesmoke;
+  color: var(--font-paragraph-color);
   font-size: 1.2rem;
   width: 75%;
   line-height: 25px;
@@ -674,7 +684,7 @@ body {
   position: relative;
   width: 200px;
   height: 300px;
-  background-color: var(--background-color-web);
+  background-color: var(--background-color-nav-bar);
   z-index: 20;
 }
 

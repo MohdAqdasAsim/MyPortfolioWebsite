@@ -28,53 +28,53 @@ function changeColor(icon, condition) {
   }
 }
 
-const home_icon = document.getElementById("home-icon");
-const about_icon = document.getElementById("about-icon");
-const skills_icon = document.getElementById("skills-icon");
-const projects_icon = document.getElementById("projects-icon");
-const contact_icon = document.getElementById("contact-icon");
-const icons = [home_icon, about_icon, skills_icon, projects_icon, contact_icon];
+// const home_icon = document.getElementById("home-icon");
+// const about_icon = document.getElementById("about-icon");
+// const skills_icon = document.getElementById("skills-icon");
+// const projects_icon = document.getElementById("projects-icon");
+// const contact_icon = document.getElementById("contact-icon");
+// const icons = [home_icon, about_icon, skills_icon, projects_icon, contact_icon];
 
-for (let i = 0; i < icons.length; i++) {
-  icons[i].addEventListener("mouseenter", () => {
-    switch (i) {
-      case 0:
-        icons[i].innerHTML = '<a href="#home">HOME</a>';
-        break;
-      case 1:
-        icons[i].innerHTML = '<a href="#about-me">ABOUT</a>';
-        break;
-      case 2:
-        icons[i].innerHTML = '<a href="#skills">SKILLS</a>';
-        break;
-      case 3:
-        icons[i].innerHTML = '<a href="#projects">PROJECTS</a>';
-        break;
-      case 4:
-        icons[i].innerHTML = '<a href="#contact">CONTACT</a>';
-        break;
-    }
-  });
-  icons[i].addEventListener("mouseleave", () => {
-    switch (i) {
-      case 0:
-        icons[i].innerHTML = '<a href="#home"><i class="fa-solid fa-house fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
-        break;
-      case 1:
-        icons[i].innerHTML = '<a href="#about-me"><i class="fa-solid fa-user fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
-        break;
-      case 2:
-        icons[i].innerHTML = '<a href="#skills"><i class="fa-solid fa-gear fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
-        break;
-      case 3:
-        icons[i].innerHTML = '<a href="#projects"><i class="fa-solid fa-file fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
-        break;
-      case 4:
-        icons[i].innerHTML = '<a href="#contact"><i class="fa-solid fa-envelope fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
-        break;
-    }
-  });
-};
+// for (let i = 0; i < icons.length; i++) {
+//   icons[i].addEventListener("mouseenter", () => {
+//     switch (i) {
+//       case 0:
+//         icons[i].innerHTML = '<a href="#home">HOME</a>';
+//         break;
+//       case 1:
+//         icons[i].innerHTML = '<a href="#about-me">ABOUT</a>';
+//         break;
+//       case 2:
+//         icons[i].innerHTML = '<a href="#skills">SKILLS</a>';
+//         break;
+//       case 3:
+//         icons[i].innerHTML = '<a href="#projects">PROJECTS</a>';
+//         break;
+//       case 4:
+//         icons[i].innerHTML = '<a href="#contact">CONTACT</a>';
+//         break;
+//     }
+//   });
+//   icons[i].addEventListener("mouseleave", () => {
+//     switch (i) {
+//       case 0:
+//         icons[i].innerHTML = '<a href="#home"><i class="fa-solid fa-house fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
+//         break;
+//       case 1:
+//         icons[i].innerHTML = '<a href="#about-me"><i class="fa-solid fa-user fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
+//         break;
+//       case 2:
+//         icons[i].innerHTML = '<a href="#skills"><i class="fa-solid fa-gear fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
+//         break;
+//       case 3:
+//         icons[i].innerHTML = '<a href="#projects"><i class="fa-solid fa-file fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
+//         break;
+//       case 4:
+//         icons[i].innerHTML = '<a href="#contact"><i class="fa-solid fa-envelope fa-lg" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)" onmouseleave="changeColor(this,false)"></i></a>';
+//         break;
+//     }
+//   });
+// };
 
 const setting_btn = document.getElementById("setting-btn");
 const setting_menu = document.getElementById("setting-menu");
@@ -132,5 +132,18 @@ music_btn.addEventListener("click", () => {
     music_circle.style.transform = "translate(0%,0%)";
     music_btn.dataset.currentVolume = 0;
     background_music.pause();
+  }
+});
+
+const menu = document.getElementById("menu");
+const menu_div = document.getElementById("menu-div");
+
+menu_div.addEventListener("click",() => {
+  if(menu_div.dataset.statusValue == 0) {
+    menu_div.innerHTML = '<i class="fa-solid fa-xmark fa-2xl"></i>';
+    menu_div.dataset.statusValue = 1;
+  } else {
+    menu_div.innerHTML = '<i class="fa-solid fa-bars fa-2xl"></i>';
+    menu_div.dataset.statusValue = 0;
   }
 });
