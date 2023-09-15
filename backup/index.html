@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohd Aqdas Asim</title>
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/72e8700359.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="nav-bar">
+    <div id="menu-div" data-status-value="0"><i class="fa-solid fa-bars fa-2xl" id="menu"></i></div>
+
+    <nav id="links">
+      <ul>
+        <li id="home-icon" class="icons"><a href="#home"><i class="fa-solid fa-house fa-lg"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li id="about-icon" class="icons"><a href="#about-me"><i class="fa-solid fa-user fa-lg"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li id="skills-icon" class="icons"><a href="#skills"><i class="fa-solid fa-gear fa-lg"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li id="projects-icon" class="icons"><a href="#projects"><i class="fa-solid fa-file fa-lg"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li id="contact-icon" class="icons"><a href="#contact"><i class="fa-solid fa-envelope fa-lg"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+      </ul>
+    </nav>
+
+    <nav id="social-links">
+      <ul>
+        <li><a href="https://www.instagram.com/aqdas2274/" target="_blank"><i class="fa-brands fa-instagram fa-sm"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li><a href="https://github.com/MohdAqdasAsim" target="_blank"><i class="fa-brands fa-github fa-sm"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+        <li><a href="http://" target="_blank"><i class="fa-brands fa-linkedin fa-sm"
+              style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+              onmouseleave="changeColor(this,false)"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="setting-btn" data-visible-value="0">
+    <i class="fa-solid fa-gears fa-2xl" style="color: var(--nav-bar-icon-color)" onmouseover="changeColor(this,true)"
+      onmouseleave="changeColor(this,false)"></i>
+  </div>
+  <div id="setting-menu">
+    <div id="theme" class="toggle-btn" data-current-mode="0">
+      <div id="theme-circle" class="toggle-circle">
+        <i class="fa-solid fa-moon fa-xl" style="color: var(--background-color-web)"></i>
+      </div>
+    </div>
+    <div id="music" class="toggle-btn" data-current-volume="0">
+      <div id="music-circle" class="toggle-circle">
+        <i class="fa-solid fa-volume-xmark fa-xl" style="color: var(--background-color-web)"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="web-display">
+
+    <div>
+      <div class="shape" id="shape1"></div>
+      <div class="shape" id="shape2"></div>
+      <div class="shape" id="shape3"></div>
+      <div class="shape" id="shape4"></div>
+      <div class="shape" id="shape5"></div>
+    </div>
+    <div class="container" id="home">
+      <div>
+        <div id="starting-text">
+          <span class="intro">
+            <h1 class="letter">H</h1>
+            <h1 class="letter">i</h1>
+            <h1 class="letter">,</h1>
+          </span>
+          <span class="intro">
+            <h1 class="letter">I</h1>
+            <h1 class="letter">'</h1>
+            <h1 class="letter">m</h1>
+            <h1 class="letter">&ThickSpace;</h1>
+            <h1 class="letter" id="text-A">A</h1>
+            <h1 class="letter">q</h1>
+            <h1 class="letter">d</h1>
+            <h1 class="letter">a</h1>
+            <h1 class="letter">s</h1>
+            <h1 class="letter">,</h1>
+          </span>
+          <span class="intro">
+            <h1 class="letter">w</h1>
+            <h1 class="letter">e</h1>
+            <h1 class="letter">b</h1>
+            <h1 class="letter">&ThickSpace;</h1>
+            <h1 class="letter">d</h1>
+            <h1 class="letter">e</h1>
+            <h1 class="letter">v</h1>
+            <h1 class="letter">e</h1>
+            <h1 class="letter">l</h1>
+            <h1 class="letter">o</h1>
+            <h1 class="letter">p</h1>
+            <h1 class="letter">e</h1>
+            <h1 class="letter">r</h1>
+            <h1 class="letter">.</h1>
+          </span>
+          <div>
+            <h4 id="status">Full Stack Developer / FreeLancer</h4>
+            <button id="contact-btn"><a href="#contact">Contact Me</a></button>
+          </div>
+        </div>
+
+        <div id="logo-model">
+          <div><img src="images/name.png" alt="logo"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="about-me">
+      <div id="text-container-about">
+        <div class="heading" id="about-heading">
+          <span class="intro">
+            <h1 class="letter-about-me">A</h1>
+            <h1 class="letter-about-me">b</h1>
+            <h1 class="letter-about-me">o</h1>
+            <h1 class="letter-about-me">u</h1>
+            <h1 class="letter-about-me">t</h1>
+            <h1 class="letter-about-me">&ThickSpace;</h1>
+            <h1 class="letter-about-me">M</h1>
+            <h1 class="letter-about-me">e</h1>
+            <h1 class="letter-about-me">.</h1>
+          </span>
+        </div>
+
+        <div class="paragraph" id="about-paragraph">
+          <p>
+            Behind every line of code and every pixel perfected lies a story—a story of curiosity, determination, and a
+            relentless pursuit of excellence. I am the author of that story, and I'm thrilled to share it with
+            you.<br><br>
+            I'm not just a programmer; I'm a creator, a problem solver, and a lifelong learner. My journey into the
+            world of technology began with a single line of code, and since then, I've embarked on an exhilarating
+            adventure to explore the endless possibilities of software development.<br><br>
+            But there's more to me than just my passion for coding. I believe in the power of collaboration and the
+            beauty of simplicity. I'm a firm believer that technology, when wielded with purpose and care, can make the
+            world a better place.<br><br>
+            When I'm not immersed in the digital realm, you can find me [insert a few personal interests or hobbies
+            here, which keeps my creative juices flowing and adds balance to my life.<br><br>
+            So, let's connect, collaborate, and create something extraordinary together. Whether you're here to explore
+            my work, discuss a project, or simply share your own journey, I'm excited to be a part of it. Welcome to my
+            world of innovation and inspiration.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="skills">
+      <div id="text-container-about">
+        <div class="heading" id="skills-heading">
+          <span class="intro">
+            <h1 class="letter-about-me">S</h1>
+            <h1 class="letter-about-me">k</h1>
+            <h1 class="letter-about-me">i</h1>
+            <h1 class="letter-about-me">l</h1>
+            <h1 class="letter-about-me">l</h1>
+            <h1 class="letter-about-me">s</h1>
+            <h1 class="letter-about-me">.</h1>
+          </span>
+        </div>
+
+        <div class="paragraph" id="skills-paragraph">
+          <p>
+            In my journey through the exciting world of programming and software development, I've found my passion in
+            crafting digital experiences and solving complex problems. My skills are the building blocks of this
+            ever-evolving adventure, and I take immense pride in what I've mastered so far:
+          </p><br><br>
+          <div id="skills-box">
+            <div id="front-end-skills">
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>Javascript</div>
+              <div>React</div>
+              <div>Angular</div>
+              <div>Bootstrap</div>
+            </div>
+            <div id="back-end-skills">
+              <div>PHP</div>
+              <div>MySQL</div>
+              <div>MongoDB</div>
+              <div>Node.js</div>
+              <div>GitHub</div>
+              <div>MongoDB</div>
+            </div>
+            <div id="languages-skills">
+              <div>Java</div>
+              <div>Python</div>
+              <div>Kotlin</div>
+              <div>C#</div>
+              <div>C++</div>
+              <div>Ruby</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="projects">
+      <div id="para">
+        <div class="heading" id="projects-heading">
+          <span class="intro">
+            <h1 class="letter-about-me">P</h1>
+            <h1 class="letter-about-me">r</h1>
+            <h1 class="letter-about-me">o</h1>
+            <h1 class="letter-about-me">j</h1>
+            <h1 class="letter-about-me">e</h1>
+            <h1 class="letter-about-me">c</h1>
+            <h1 class="letter-about-me">t</h1>
+            <h1 class="letter-about-me">s</h1>
+            <h1 class="letter-about-me">.</h1>
+          </span>
+        </div>
+        <div class="paragraph" id="projects-paragraph">
+          <p>
+            As a passionate developer, I've transformed lines of code into tangible solutions and digital innovations.
+            My
+            project portfolio is a testament to my dedication and creativity in the world of software development. Here,
+            you'll find a curated selection of projects that showcase my skills and highlight my problem-solving
+            abilities. Each project is a unique story of challenges met, solutions crafted, and results achieved. Take a
+            journey through my work and discover the possibilities we can explore together.
+          </p>
+        </div>
+      </div>
+      <div id="project-section">
+        <div class="project" id="project-1">
+
+        </div>
+        <div class="project" id="project-1">
+
+        </div>
+        <div class="project" id="project-1">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="contact">
+      <div id="contact-form">
+        <div class="heading" id="contact-heading">
+          <span class="intro">
+            <h1 class="letter-about-me">C</h1>
+            <h1 class="letter-about-me">o</h1>
+            <h1 class="letter-about-me">n</h1>
+            <h1 class="letter-about-me">t</h1>
+            <h1 class="letter-about-me">a</h1>
+            <h1 class="letter-about-me">c</h1>
+            <h1 class="letter-about-me">t</h1>
+            <h1 class="letter-about-me">&ThickSpace;</h1>
+            <h1 class="letter-about-me">M</h1>
+            <h1 class="letter-about-me">e</h1>
+            <h1 class="letter-about-me">.</h1>
+          </span>
+        </div>
+
+        <div class="paragraph" id="contact-paragraph">
+          <p>
+            Ready to start a conversation or embark on a new project together? Fantastic! I'm just a few keystrokes
+            away.<br>
+            <!-- Feel free to reach out for any reason—whether you want to discuss a potential collaboration, ask a burning
+            question, or simply share your thoughts. Your message is the first step toward something amazing.<br>
+            Let's turn your ideas into reality and make a difference in the digital landscape. I'm excited to hear from
+            you, and I promise to respond as swiftly as my inbox allows.<br>
+            Whether it's a formal inquiry or an informal chat, your message is important to me. So, let's connect,
+            brainstorm, and create magic. I can't wait to get started. -->
+          </p>
+        </div>
+
+        <div id="inputs">
+          <div id="input-one">
+            <input type="text" name="name" id="name-input" placeholder="Name">
+            <input type="email" name="email" id="email-input" placeholder="Email">
+          </div>
+          <div id="input-second">
+            <input type="text" name="subject" id="subject-input" placeholder="Subject">
+            <input type="text" name="text" id="message-input" placeholder="Message">
+          </div>
+          <div id="btn-div">
+            <button id="send-btn">SEND</button>
+          </div>
+        </div>
+      </div>
+      <div id="empty-part"></div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
